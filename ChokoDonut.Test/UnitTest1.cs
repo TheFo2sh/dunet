@@ -16,6 +16,5 @@ public class UnitTest1
         handler.Apply(circle);
         Assert.Equal("Circle",manger.Type);
         Assert.Equal(5,(manger.Context as Shape.Circle).Radius);
-
     }
 }

@@ -32,12 +32,7 @@ internal record UnionRecord(
 
         sb.AppendLine("}");
         sb.AppendLine("}");
-
-        using (var file = File.CreateText(
-                   @"C:\Users\Ahmed\AppData\Local\Temp\RiderSourceGeneratedDocuments\871E912C27424215D8ED8BC9\ChokoDonut\ChokoDonut.UnionAttributeGenerator\UnionRecord.cs"))
-        {
-            file.Write(sb.ToString());
-        }
+        
 
         return sb.ToString();
 
