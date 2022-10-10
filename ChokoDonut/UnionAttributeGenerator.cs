@@ -15,5 +15,14 @@ public class UnionAttributeGenerator : IIncrementalGenerator
                     SourceText.From(GenerateInterfaceAttributeSource.SourceCode, Encoding.UTF8)
                 )
         );
+        
+        context.RegisterPostInitializationOutput(
+            ctx =>
+                ctx.AddSource(
+                    $"{HandlerInterfaceSource.Name}.g.cs",
+                    SourceText.From(HandlerInterfaceSource.SourceCode, Encoding.UTF8)
+                )
+        );
+        
     }
 }

@@ -22,8 +22,10 @@ internal record UnionRecord(
     {
         var sb = new StringBuilder();
         sb.AppendLine("using System;");
+        sb.AppendLine("using ChokoDunet;");
         sb.AppendLine($"namespace {Namespace} {{");
-        sb.AppendLine($"public interface I{Name}Handler");
+        sb.AppendLine(
+            $"public interface I{Name}Handler:{string.Join(",", Members.Select(member => $"IHandler<{Name}.{member.Name}>"))}");
         sb.AppendLine("{");
         foreach (var member in Members)
         {

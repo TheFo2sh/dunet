@@ -1,10 +1,12 @@
-﻿namespace ChokoDonut.Test;
+﻿using ChokoDunet;
+
+namespace ChokoDonut.Test;
 
 public class Handler:IShapeHandler
 {
-    private readonly Manger _manger;
+    private readonly OutputManger _manger;
 
-    public Handler(Manger manger)
+    public Handler(OutputManger manger)
     {
         _manger = manger;
     }

@@ -1,9 +1,7 @@
 ﻿namespace ChokoDonut.Test;
 
-public class Manger
+public class OutputManger
 {
- 
-
     public object Context { get; private set; }
     public string Type { get; private set; }
 

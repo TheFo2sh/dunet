@@ -10,7 +10,7 @@ public class UnitTest1
     [Fact]
     public void Test1()
     {
-        var manger = new Manger();
+        var manger = new OutputManger();
         var handler = new Handler(manger);
         Shape circle = new Shape.Circle(5);
         handler.Apply(circle);
