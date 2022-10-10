@@ -8,6 +8,8 @@
         <IsPublishable>True</IsPublishable>
         <IncludeBuildOutput>false</IncludeBuildOutput>
         <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+        <Title>ChokoDonut</Title>
+        <RepositoryUrl>https://github.com/TheFo2sh/dunet</RepositoryUrl>
     </PropertyGroup>
 
     <ItemGroup>
